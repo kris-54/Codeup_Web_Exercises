@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>user interaction</title>
+</head>
+<body>
+
+	<h1>User Interaction</h1>
+
+
+	<script type="text/javascript">
+
+	var username = prompt('What is ur name???');
+
+	while(username === null || username === "") 
+	{
+		username = prompt('No really give me your DAMN name...please.....');
+	}
+	alert('Hello ' + username);
+
+	var pizza = confirm("Do you like pizza?");
+
+	if (pizza) 
+	{
+		alert('Awesome!!! Pizza is healthy...and delicious!!!');
+	} else 
+		{
+			alert('You really should give pizza a try!!');
+		}
+
+	</script>
+
+</body>
+</html>
