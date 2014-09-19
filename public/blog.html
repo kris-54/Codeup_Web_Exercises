@@ -1,0 +1,100 @@
+<!-- get bootstrap.com
+get template
+bootswatch
+
+create a local template blog.html
+
+load moment.jsfile
+load your own javascript file for ur js code
+post json should  follow format:
+
+
+var post = [
+	{
+	  'date'
+	  'title'
+	  'content'
+	  'image'
+	},
+	{
+	  'date'
+	  'title'
+	  'content'
+	  'image'
+	},
+]; -->
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="/js/moment.js"></script>
+
+	<style type="text/css">
+		.jumbotron {
+			background-image: url("/img/superpunch.png");
+           -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+           -webkit-text-stroke-width: 3px;
+           -webkit-text-stroke-color: black;
+    }
+    .jumbotron>p.lead {
+            -webkit-text-fill-color: yellow; /* Will override color (regardless of order) */
+           -webkit-text-stroke-width: 3px;
+           -webkit-text-stroke-color: black;
+    }
+		
+		h1 {
+			font-weight: bold;
+		}
+		
+
+		body {
+			background-color: yellow;
+		}
+		.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+		color: red;
+		background-color: rgba(114, 114, 218, 0.7);;
+	   }
+
+     #posty {
+      margin: center;
+     }
+	</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+      <div class="header">
+        <ul class="nav nav-pills pull-left">
+          <li class="active"><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
+      </div>
+
+    <div class="jumbotron">
+        <h1>My Blog</h1>
+        <p class="lead">SUPER Random Crap!!!! </p>
+    </div>
+
+    <div id="posty"></div>
+
+
+
+    </div> <!-- /container -->
+      <div class="footer">
+        <p>&copy; Kris 2014</p>
+      </div>
+
+    <script src="/js/blog.js"></script>
+    
+
+
+    
+</body>
+</html>
