@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>jquery exercises 9.1.3 Element Selector</title>
+    <title>jquery exercises 9.1.4 Multiple Selectors</title>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     
 </head>
 <body>
-    <h1 id="header">Check This Out!!</h1>
+    <h1 id="header" class="important">Check This Out!!</h1>
 
     <div id="container">
     <p id="stuff">
@@ -13,20 +13,16 @@
     </p>
 
     <ul class="codeup">
-        <li>Thing one</li>
+        <li class="red">Thing one</li>
         <li>Thing two</li>
-        <li>Thing three</li>
+        <li class="blue">Thing three</li>
         <li>Thing four</li>
     </ul>
     </div>  
 
     <script>
         $('docment').ready(function() {
-            $('li').css('font-size', '20px');
-            $('h1').css('bakcground-color', 'yellow');
-            $('p').css('background-color', 'yellow');
-            $('li').css('background-color', 'yellow');
-
+            $('li, h1, p').css('background-color', 'yellow');
             var contents = $('h1').html();
             alert(contents);
         });
