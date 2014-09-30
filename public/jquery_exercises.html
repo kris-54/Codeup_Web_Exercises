@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>jquery exercises 9.1.4 Multiple Selectors</title>
+    <title>jquery exercises 9.2.1 Mouse Events</title>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     
 </head>
@@ -13,19 +13,34 @@
     </p>
 
     <ul class="codeup">
-        <li class="red">Thing one</li>
+        <li>Thing one</li>
         <li>Thing two</li>
-        <li class="blue">Thing three</li>
+        <li>Thing three</li>
         <li>Thing four</li>
     </ul>
     </div>  
 
     <script>
-        $('docment').ready(function() {
-            $('li, h1, p').css('background-color', 'yellow');
-            var contents = $('h1').html();
-            alert(contents);
-        });
+        $('document').ready(function() {
+            $('#header').click(function() {
+                $(this).css('background-color', 'blue');
+            });
+
+            $('#stuff').dblclick(function() {
+                $(this).css('font-size', '18px');
+            });
+
+            $('li').hover(
+                    function() {
+                        $(this).css('color', 'red');
+                    },
+                    function() {
+                        $(this).css('color', 'black');
+                    }
+                );
+            
+            });
+
     </script>
 
     
