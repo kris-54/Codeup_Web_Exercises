@@ -46,6 +46,33 @@
 	</dl>
 	<a href="#" id="invisibility">Click to toggle invisibility.</a>
 
+	<h3>Carlsbad</h3>
+    <ul id="carls">
+        <li>Most of the formations—or speleothems—found inside Carlsbad Cavern today were active and growing during the last ice age</li>
+        <li>the limestone rock that holds Carlsbad Cavern is full of ocean fossil plants and animals from a time before the dinosaurs</li>
+        <li>Bones from ice age animals like jaguars, camels, lions and giant sloths have been found in the entrance areas of some caves in Carlsbad Caverns National Park.</li>
+        <li>Nearly 400,000 Brazilian (more commonly called Mexican) free-tail bats call Carlsbad Cavern home in the summer</li>
+    </ul>
+
+    <h3>Denali</h3>
+    <ul id="denali">
+    	<li>fact one</li>
+    	<li>fact two</li>
+    	<li>fact three</li>
+    	<li>fact four</li>
+    </ul>
+    
+    <h3>Big Bend</h3>
+    <ul id="bb">
+    	<li>fact one</li>
+    	<li>fact two</li>
+    	<li>fact three</li>
+    	<li>fact four</li>
+    </ul>
+
+
+
+
 	<script>
 
 	    $('document').ready(function() {
@@ -55,6 +82,16 @@
 	       	});
         	
         });
+
+// Create jQuery code that makes the first li element in each ul have font-weight: bold.
+		$('ul').each(function() {
+        		$(this).children().first().css('font-weight' , 'bold');
+        	});
+
+// Create jQuery code that adds the invisible class on the parent ul of any li that is clicked
+	    $('li').click(function() {
+            	$(this).parent().addClass('invisible');
+            })
 
 	</script>
 </body>
