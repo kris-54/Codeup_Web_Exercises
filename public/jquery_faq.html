@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>National Parks FAQ</title>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<style>
+		.invisible {
+            display: none;
+        }
+	</style>
+
+</head>
+<body>
+	<h1>National Parks FAQ</h1>
+
+	<dl>
+		<dt>How many states have national parks?</dt>
+		<dd class="invisible">Twenty seven states have national parks</dd>
+
+		<dt>What is carlsbad?</dt>
+		<dd class="invisible">Carlsbad Caverns National Park is a United States National Park in the Guadalupe Mountains in southeastern New Mexico. The primary attraction of the park is the show cave, Carlsbad Cavern.</dd>
+
+		<dt>Where and what is Big Bend?</dt>
+		<dd class="invisible">Named for the prominent bend in the Rio Grande along the USA/Mexico border, this park encompasses a large and remote part of the Chihuahuan Desert. Its main attraction is backcountry recreation in the arid Chisos Mountains and in canyons along the river. A wide variety of Cretaceous and Tertiary fossils as well as cultural artifacts of Native Americans also exist within its borders. It is located in Texas.</dd>
+
+		<dt>What is Crater Lake</dt>
+		<dd class="invisible">Crater Lake lies in the caldera of an ancient volcano called Mount Mazama that collapsed 7,700 years ago. It is the deepest lake in the United States and is famous for its vivid blue color and water clarity. There are two more recent volcanic islands in the lake, and, with no inlets or outlets, all water comes through precipitation</dd>
+
+		<dt>What is Death Valley</dt>
+		<dd class="invisible">Death Valley is the hottest, lowest, and driest place in the United States. Daytime temperatures have topped 130F and it is home to Badwater Basin, the lowest elevation in North America. A diversity of colorful canyons, desolate badlands, shifting sand dunes, sprawling mountains, and over 1000 species of plants populate this geologic graben. Additional points of interest include salt flats, historic mines, and springs.</dd>
+
+		<dt>Where is Denali?</dt>
+		<dd class="invisible">Centered around Mount McKinley, the tallest mountain in North America, Denali is serviced by a single road leading to Wonder Lake. McKinley and other peaks of the Alaska Range are covered with long glaciers and boreal forest. Wildlife includes grizzly bears, Dall sheep, caribou, and gray wolves.</dd>
+
+		<dt>Where are the Dry Tortugas located?</dt>
+		<dd class="invisible">The islands of the Dry Tortugas, at the westernmost end of the Florida Keys, are the site of Fort Jefferson, a Civil War-era fort that is the largest masonry structure in the Western Hemisphere. With most of the park being remote ocean, it is home to undisturbed coral reefs and shipwrecks and is only accessible by plane or boat.</dd>
+
+		<dt>Where are the Everglades?</dt>
+		<dd class="invisible">The Everglades are the largest subtropical wilderness in the United States. This mangrove ecosystem and marine estuary is home to 36 protected species, including the Florida panther, American crocodile, and West Indian manatee. Some areas have been drained and developed; restoration projects aim to restore the ecology.</dd>
+
+		<dt>Where are the Guadalupe Mountains?</dt>
+		<dd class="invisible">This park boasts Guadalupe Peak, the highest point in Texas; the scenic McKittrick Canyon filled with Bigtooth Maples; a corner of the arid Chihuahuan Desert; and a fossilized coral reef from the Permian era.[</dd>
+
+		<dt>Where is Hot Springs located?</dt>
+		<dd class="invisible">Hot Springs is the smallest and only National Park in an urban area and is based around natural hot springs that have been managed by the federal government since the 1830s. Being the oldest in the National Park system, Hot Springs was established by act of congress on April 20, 1832. A National Park printing in 1921 listed Hot Springs National Park as the first and Yellowstone as the second, but sometime in the 1930s, someone in the park service decided that Hot Springs was too urban and that Yellowstone, with its wilderness spaces and park rangers, was a better representation of what a "park" should be. History was therefore, re-written. The springs provide opportunities for relaxation in an historic setting; Bathhouse Row preserves numerous examples of 19th-century architecture.</dd>
+	</dl>
+	<a href="#" id="invisibility">Click to toggle invisibility.</a>
+
+	<script>
+
+	    $('document').ready(function() {
+	    	$('#invisibility').click(function() {
+				event.preventDefault();
+	            $('dd').toggleClass('invisible');
+	       	});
+        	
+        });
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
