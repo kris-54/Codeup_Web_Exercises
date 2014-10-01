@@ -11,9 +11,9 @@
 
 </head>
 <body>
-	<h1>National Parks FAQ</h1>
+	<h3 id="park-toggle">National Parks FAQ</h3>
 
-	<dl>
+	<dl id="definitions">
 		<dt>How many states have national parks?</dt>
 		<dd class="invisible">Twenty seven states have national parks</dd>
 
@@ -44,8 +44,7 @@
 		<dt>Where is Hot Springs located?</dt>
 		<dd class="invisible">Hot Springs is the smallest and only National Park in an urban area and is based around natural hot springs that have been managed by the federal government since the 1830s. Being the oldest in the National Park system, Hot Springs was established by act of congress on April 20, 1832. A National Park printing in 1921 listed Hot Springs National Park as the first and Yellowstone as the second, but sometime in the 1930s, someone in the park service decided that Hot Springs was too urban and that Yellowstone, with its wilderness spaces and park rangers, was a better representation of what a "park" should be. History was therefore, re-written. The springs provide opportunities for relaxation in an historic setting; Bathhouse Row preserves numerous examples of 19th-century architecture.</dd>
 	</dl>
-	<a href="#" id="invisibility">Click to toggle invisibility.</a>
-
+	
 	<h3>Carlsbad</h3>
     <ul id="carls">
         <li>Most of the formations—or speleothems—found inside Carlsbad Cavern today were active and growing during the last ice age</li>
@@ -70,32 +69,25 @@
     	<li>fact four</li>
     </ul>
 
-
-
-
 	<script>
 
-	    $('document').ready(function() {
-	    	$('#invisibility').click(function() {
-				event.preventDefault();
-	            $('dd').toggleClass('invisible');
-	       	});
-        	
+// Update the code that uses the invisible class to hide and show dd elements to instead use the .toggle() method.
+		$('document').ready(function() {
+            $('#park-toggle').click(function() {
+                $('.invisible').toggle();
+            });
+            
         });
 
-// Create jQuery code that makes the first li element in each ul have font-weight: bold.
-		$('ul').each(function() {
-        		$(this).children().first().css('font-weight' , 'bold');
-        	});
-
-// Create jQuery code that adds the invisible class on the parent ul of any li that is clicked
+// Update the li clicks adding invisible to the parent ul to instead use .hide().
 	    $('li').click(function() {
-            	$(this).parent().addClass('invisible');
+            	$(this).parent().hide();
             })
 
 	</script>
 </body>
 </html>
+
 
 
 
