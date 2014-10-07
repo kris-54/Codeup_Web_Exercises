@@ -4,5 +4,4 @@ $dbc = new PDO('mysql:host=127.0.0.1;dbname=AdLister', 'codeup', 'codeuprocks');
  
 // Tell PDO to throw exceptions on error
 $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 ?>
