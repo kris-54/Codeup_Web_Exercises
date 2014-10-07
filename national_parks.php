@@ -25,7 +25,7 @@ $parks = $stmt->fetchAll(PDO::FETCH_ASSOC);
      		<li>$park['location']</li> 
      		<li>$park['date_established']</li> 
      		<li>$park['area_in_acres']</li>         
-    <?php endforeach; ?>	       
+    <?php endforeach; ?>	n       
     </ul>
 	    
 
