@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>break continue</title>
+    <title>break continue</title>
 </head>
 <body>
-	<h1>Break Continue</h1>
 
+    <h1>Break Continue</h1>
 
+    <script>
+    var random = Math.floor((Math.random()*50)+1);
 
-	<script>
-	var random = Math.floor((Math.random()*50)+1);
-
-	while (random % 2 == 0)
-	{
-		var random = Math.floor((Math.random()*50)+1);
-	}
-	console.log("Random Odd number is: " + random);
-
-	for (var i = 1; i < 50; i++) 
-	
-	if (i % 2 != 0) 
-    	
+    while (random % 2 == 0)
     {
-    	if (random == i)
-    	{
-        console.log('Skipping this # ' + i);
-        continue;
-    		
-    	} else 
-    	{
-        console.log("here is odd number " + i);
-    		
-    	}
+        var random = Math.floor((Math.random()*50)+1);
+    }
+    console.log("Random Odd number is: " + random);
 
-  	}
+    for (var i = 1; i < 50; i++) 
+    
+    if (i % 2 != 0) 
+        
+    {
+        if (random == i) {
+            console.log('Skipping this # ' + i);
+            continue;
+        } else {
+            console.log("here is odd number " + i);
+        }
 
-  	
-	
+    }
 
-
-
-	</script>
+    </script>
 </body>
 </html>
