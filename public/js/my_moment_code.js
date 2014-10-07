@@ -18,7 +18,6 @@ console.log(x);
  var startOfDay = now.startOf('day').fromNow();
  console.log(startOfDay);
 
-
 //end of day is "x" hours
  var endOfDay = now.endOf('day').fromNow();
  console.log(endOfDay);
