@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Delayed Autosave</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+<body>
+
+    <h2>Autosaving Text Input</h2>
+    <textarea rows="10" cols="60" id="important"></textarea>
+
+    <script>
+
+
+        var timeoutId;
+
+        //refactored to use jquery
+        var textarea = $('#important').keyup(autosave);
+
+
+        function save() {
+            alert('Saved!');
+        }
+
+        function autosave() {
+
+            clearTimeout(timeoutId);
+
+            timeoutId = setTimeout(save, 2000);
+            
+        }
+
+    </script>
+
+</body>
+</html>
