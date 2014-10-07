@@ -1,47 +1,35 @@
 <html>
 <head>
-	<title>functions</title>
+    <title>functions</title>
 </head>
 <body>
-	<h1>Functions</h1>
+    <h1>Functions</h1>
 
 
-	<script>
+    <script>
+        var myNameIs = 'Kris'; // todo: Fill in your name here.
 
-		var myNameIs = 'Kris'; // todo: Fill in your name here.
+        // todo:
+        // Create a function called 'sayHello' that takes a parameter 'name'.
+        function say_hello (name) {
+            return "Hello from " + name;
+        }
+        console.log(say_hello(myNameIs));
+        // When called, the function should log a message that says hello from the passed in name.
 
-		// todo:
-		// Create a function called 'sayHello' that takes a parameter 'name'.
-		function say_hello (name) {
-			return "Hello from " + name;
-		}
-		console.log(say_hello(myNameIs));
-		// When called, the function should log a message that says hello from the passed in name.
+        var random = Math.floor((Math.random()*100)+1);
 
+        // todo:
+        // Create a function called 'isOdd' that takes a number as a parameter.
+        // The function should use the ternary operator to log a message.
 
+        function isOdd (number) 
+        {
+            var message = (number % 2 !== 0 ? console.log(number + ' is an odd number') : console.log(number + ' is an even number'))
+        }
 
-
-		var random = Math.floor((Math.random()*100)+1);
-
-		// todo:
-		// Create a function called 'isOdd' that takes a number as a parameter.
-
-		function isOdd (number) 
-		{
-			var message = (number % 2 !== 0 ? console.log(number + ' is an odd number') : console.log(number + ' is an even number'))
-		}
-
-		isOdd(random);
-		// The function should use the ternary operator to log a message.
-		// The log should tell the number passed in and whether it is odd or not.
-
-		// todo: Call the function 'isOdd' passing the variable 'random' as a parameter.
-		
-
-
-
-
-	</script>
+        isOdd(random);
+    </script>
 
 </body>
 </html>
