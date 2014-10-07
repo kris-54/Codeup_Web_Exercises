@@ -1,0 +1,90 @@
+<html>
+<head>
+  <title>Box Model Exercise</title>
+  <style type="text/css" media="screen">
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+      color: purple;
+      font-weight: bold;
+
+    }
+    .container {
+      margin: auto;
+      width: 400px;
+      height: 300px;
+      border: solid black 1px;
+    }
+    .box { 
+      width: 72px;
+      height: 72px;
+      font-weight: bold;
+      color: white;
+      border: 1px solid black;
+      box-shadow: 10px 10px 5px #888888;      
+      float: left;
+      margin-top: 50px;
+    }    
+    div:hover {
+      box-shadow: 0px 0px 0px;
+      font-weight: lighter;
+    }    
+    #red {
+      background-color: red;       
+    }      
+    #orange {
+      background-color: orange;
+      position: relative;
+      float: left;
+      margin-left: 50px;      
+    }
+    #yellow {
+      background-color: yellow;  
+      position: relative;
+      float: left;
+      margin-left: 50px;
+    }
+    #green {
+      background-color: green; 
+      position: relative;
+      margin-right: 400px;          
+    }
+    #blue {
+      background-color: blue;
+      margin-top: -75px;   
+      position: relative;
+      margin-left: 125px;  
+    }
+    #purple {
+      background-color: purple;
+      margin-top: -75px;   
+      position: relative;
+      margin-left: 250px;      
+    }
+    .arrow{
+      position: relative;
+      top:-90px;
+      bottom:45px;
+    }
+    body {
+      background-color: rgb(62,255,68);
+    }   
+  </style>
+</head>
+<body>
+  
+  <h1><a href= "http://en.wikipedia.org/wiki/Visible_spectrum">Visible Spectrum Wavelengths</a></h1>
+
+<div class="container">
+
+  <div id="red" class="box"> 620-750 nm><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  <div id="orange" class="box"> 590-620 nm><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  <div id="yellow" class="box"> 570-590 nm><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  <div id="green" class="box"> 495-570 nm>><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  <div id="blue" class="box"> 450-495 nm><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  <div id="purple" class="box"> 380-450 nm><img src="/img/codeup-arrow.png" alt="arrow"></div>
+  
+</div>
+  
+</body>
+</html>
