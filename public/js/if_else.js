@@ -30,12 +30,6 @@
         console.log('Do not know anything about that color!');
     }
 
-
-    switch(color) {
-        case
-    }
-    
-
 // todo: Using the ternary operator, conditionally log a statement that
 //       says whether the random color matches your favorite color.
  var message = (color == favorite) ? alert("Color matches my FAVORITE") : console.log("Color is NOT my favorite");
