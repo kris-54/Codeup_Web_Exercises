@@ -1,7 +1,6 @@
 <?php
 
 require '../dbc.php';
-
 // Create a page that lists the national parks from your database. 
 // On each page load, it should retrieve all records from the database and display them.
 
@@ -93,7 +92,6 @@ if($valid) {
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Add Here" value="<?= isset($_POST['name']) ?  $_POST['name'] : '' ?>">
         
-
             <label for="location">Location</label>
             <input type="text" id="location" name="location" placeholder="Add Here" required>
 
@@ -105,8 +103,6 @@ if($valid) {
 
             <label for="description">Description</label>
             <textarea name="description" id='description' placeholder='description' required></textarea>
-
-
 
             <input type="submit" value="Add">
         </p>
