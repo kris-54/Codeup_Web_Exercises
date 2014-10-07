@@ -9,6 +9,7 @@ require '../dbc.php';
 
 // Modify your query to load the appropriate parks given which page the user is on. 
 // You should accept one or two parameters from $_GET and use them to load the appropriate parks.
+
 $offset = isset($_GET['offset']) ? intval($_GET['offset']) : 0;
 
 $stmt = $dbc->prepare("SELECT name, location, area_in_acres, date_established, description FROM national_parks LIMIT :num OFFSET :offset");
@@ -42,17 +43,10 @@ if($valid) {
     $stmt->bindValue(':description', $_POST['description'], PDO::PARAM_STR);
     $stmt->execute();
 }
-
-
-
-
-
 ?>
-
-
 <html>
 <head>
-	<title>National Parks</title>
+    <title>National Parks</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- Optional theme -->
@@ -63,8 +57,7 @@ if($valid) {
 </head>
 <body>
 
-           
-	<h1>National Parks</h1>
+    <h1>National Parks</h1>
 
 
     <table class="table table-hover">
@@ -98,36 +91,29 @@ if($valid) {
     <form method='POST'action='national_parks.php'>
          <p>
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Add Here">
+            <input type="text" id="name" name="name" placeholder="Add Here" value="<?= isset($_POST['name']) ?  $_POST['name'] : '' ?>">
         
 
             <label for="location">Location</label>
-            <input type="text" id="location" name="location" placeholder="Add Here">
+            <input type="text" id="location" name="location" placeholder="Add Here" required>
 
             <label for="date_established">Date Established</label>
-            <input type="text" id="date_established" name="date_established" placeholder="Add Here">
+            <input type="text" id="date_established" name="date_established" placeholder="Add Here" required>
 
             <label for="area_in_acres">Acres</label>
-            <input type="text" id="area_in_acres" name="area_in_acres" placeholder="Add Here">
+            <input type="text" id="area_in_acres" name="area_in_acres" placeholder="Add Here" required>
 
             <label for="description">Description</label>
-            <textarea name="description" id='description' placeholder='description'></textarea>
+            <textarea name="description" id='description' placeholder='description' required></textarea>
 
 
 
             <input type="submit" value="Add">
         </p>
 
-
-
     </form>
-	    
+        
 
 
 </body>
 </html>
-
-
-
-
-
